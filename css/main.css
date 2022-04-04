@@ -262,13 +262,14 @@ main{
 
 .text-container h1{
     color: var(--very-dark-desaturated-violet);
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 50px;
 }
 
 .text-container p{
     font-size: 20px;
     color: var(--dark-grayish-violet);
+    line-height: 1.8rem;
 }
 
 @media (min-width: 500px){
