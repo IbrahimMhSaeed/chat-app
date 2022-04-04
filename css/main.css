@@ -1,0 +1,313 @@
+*{
+    /* ### Primary */
+
+        /* #### Text */
+    --pale-violet: hsl(276, 100%, 81%); 
+    /* sub-heading at the top of the app UI */
+    --moderate-violet: hsl(276, 55%, 52%);
+    /* chat on the left */
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    /* chat on the right */
+    --grayish-blue: hsl(206, 6%, 79%);
+    /* placeholder text */
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    /* main heading */
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+    /* paragraph */
+    
+
+        /* #### Gradients */
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+
+    /* ### Secondary */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    /* app background */
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    /* submit button background */
+    --very-light-magenta: hsl(289, 100%, 72%);
+    /* radio button outline */
+
+    font-family: 'Rubik', sans-serif;
+
+}
+
+main{
+    position: relative;
+}
+
+.square-shape{
+    height: 100vw;
+    width: 100vw;
+    margin: auto;
+    background-image: linear-gradient(235deg, var(--light-magenta), var(--light-violet), var(--light-violet));
+    position: absolute;
+    box-shadow: 0 0px 0 0.5px hsl(264, 100%, 61%);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.circle-shape{
+    height: 50vw;
+    width: 100vw;
+    margin: auto;
+    border-radius:0 0 300px 300px;
+    background-color: var(--light-violet);
+    position: absolute;
+    top: 100vw;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.text-phone-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-container{
+    width: 320px;
+    height: 690px;
+    background-color: white;
+    z-index: 3;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 0px hsl(260, 3%, 79%);
+    margin: 70px auto;
+}
+
+.screen{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    box-sizing: border-box;
+    background-color: var(--light-grayish-violet);
+}
+
+.contact-info-container{
+    height: 15%;
+    background-image: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 40px 40px 10px 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 8px 0px hsl(260, 3%, 79%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;  
+    padding: 0px 20px 15px 20px;
+    color: white;
+}
+
+.white-space{
+    width: 60%;
+    height: 25%;
+    background-color: white; 
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
+
+.contact-info i{
+    flex-basis: 5%;
+    font-size: 13px;
+}
+
+.contact-info i:last-child{
+    color: var(--pale-violet);
+}
+
+.avatar-container{
+    width: 34px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: white;
+    margin-left: 5px;
+}
+
+.avatar-container img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contact-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    flex-basis: 80%;
+    padding: 0px 10px;
+}
+
+.contact-name span:first-child{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact-name span:last-child{
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--pale-violet);
+}
+
+.chat{
+    height: 80%;
+    padding: 15px 10px;
+    font-size: 13px;
+}
+
+.sender, .receiver, .colored{
+    width: fit-content;
+    max-width: 60%;
+    line-height: 1.1rem;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.sender{
+    background-color: hsl(270, 4%, 90%);
+    color: var(--moderate-violet);
+    border-radius: 15px 15px 15px 5px;
+}
+
+.dog-pics{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.dog-pics img{
+    max-width: 50%;
+    height: 50px;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.receiver{
+    margin-left: auto;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px hsl(260, 3%, 79%);
+    color: var(--desaturated-dark-violet);
+    border-radius: 15px 15px 5px 15px;
+}
+
+.colored{
+    color: white;
+    background-image: linear-gradient(90deg, var(--light-magenta), var(--light-violet));
+    border-radius: 15px 15px 15px 5px;
+    padding: 13px;
+    width: 70%;
+    max-width: none;
+    display: flex;
+    align-items: center;
+}
+
+.colored div{
+    color: var(--pale-violet);
+    display: flex;
+}
+
+.colored span{
+    font-weight: 700;
+    font-size: 18px;
+    flex: 1;
+    text-align: right;
+}
+
+.colored div::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--pale-violet);
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+}
+
+.type{
+    width: auto;
+    height: 45px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-grayish-violet);
+    font-size: 13px;
+}
+
+.type span{
+    margin-left: 15px;
+}
+
+.type i{
+    font-size: 35px;
+    color: var(--very-dark-desaturated-violet);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.text-container{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    z-index: 3;
+}
+
+.text-container h1{
+    color: var(--very-dark-desaturated-violet);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.text-container p{
+    font-size: 20px;
+    color: var(--dark-grayish-violet);
+}
+
+@media (min-width: 500px){
+    .square-shape{
+        height: 400px;
+        width: 500px;
+        transform: translateX(-10%);
+    }
+    .circle-shape{
+        height: 250px;
+        width: 500px;
+        top: 400px;
+        transform: translateX(-10%);
+    }
+}
+
+@media (min-width: 1024px){
+    .text-phone-container{
+        width: 900px;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .text-container{
+        text-align: left;
+        width: 450px;
+        margin: auto 0;
+        transform: scale(0.8);
+        flex-shrink: 1;
+    }
+    .phone-container{
+        margin: 0;
+        transform: scale(0.8);
+        flex-shrink: 0;
+    }
+}
+
+
+
+
+
